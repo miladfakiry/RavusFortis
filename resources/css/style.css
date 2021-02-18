@@ -4,9 +4,158 @@
 /* BASIC SETUP */
 /* --------------------------------------- */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html, body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-size: 20px;
+    font-weight: 300;
+    overflow-x: hidden; /*Nachschlagen im W3C, wenn das Bild zu gross ist und der Browser somit einen scrollbar einfügen müsste, wird das Bild soweit abgeschnitten, dass dieses Scrollbar weg ist*/
+}
 
 /* --------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* --------------------------------------- */
+.row {
+    max-width: 1140px; /* definiert die maximale Ausdehnung eines elementes, egal wie viel Platz für die Webseite ist*/
+    margin: 0 auto; /* Trick: zentriert das Element horizontal, unbedingt merken */
+    
+}
+section {
+    padding: 80px 0;
+}
 
+.box {
+    padding: 1%;
+}
+
+/* ----------- HEADING --------- */
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase; /* Buchstaben welche am Anfang klein geschrieben sind, werden gross geschrieben */
+}
+
+h1 { /* alles definieren, damit der Browser nicht rein pfust */
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 300%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* ------------- LINKS --------*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    /* Flat UI Colors used: https://flatuicolors.com/palette/defo */
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #2980b9;
+    color: #2980b9;
+}
+
+.btn:hover,
+.btn:active {
+    /* to get a darker "shade" of the orange color use: http://www.0to255.com/ */
+    background-color: #1e5c84;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #1e5c84;
+    background-color: #1e5c84;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #2980b9;
+    color: #fff;
+    background-color: #2980b9;
+}
+/* ------------- HEADER --------*/
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* wenn die Seite gescrollt wird, bleibt dann das Bild bestehen */
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    height: 90px;
+    width: auto;
+    float: left;
+    display: block;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right; /* In welcher Position sich die Reiter befinden sollen */
+    list-style: none; /* keine Styles auf die Reiter (blank) */
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px; /* Abstand zwischen den Reitern */
+    margin-top: 55px; /* Abstand vom oberen Rand */
+}
+
+.main-nav li a:link, /* Den Reitern werden hier Links vergeben. So fungieren sie als Links mit Hovern usw. */
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; /* Grossbuchstaben */
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; /* Hier erscheint kurz eine Linie unterhalb des Reiters, aber ich weiss nicht wann genau */
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #2980b9;
+}
+
+
+
+/* Aufgaben, 1-2 Stunden spielen mit der Webseite und Erfahrungen sammeln */

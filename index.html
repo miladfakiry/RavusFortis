@@ -1,6 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavusFortis</title>
+
+    <!-- Stylesheets + Javascript -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="resources/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="resources/img/favicon/apple-icon-144x144.png"/>
+    <link rel="shortcut icon" sizes="192x1192" href="resources/img/favicon/android-icon-192x192.png" />
+
+    <!-- Icon Library -->
+</head>
 <body>
-<h1>Hello World!</h1>
+    <header>
+        <nav>
+            <div class="row"> <!-- row = wenn der Browser immer grösser gezogen wird, soll sich die Webseite in der Mitte festlegen (Maximale Ausdehnung muss im Css gegeben sein)-->
+                <img src="resources/img/logo-white.png" alt="RavusFortis Logo" class="logo"/> <!--Class logo wird hier gesetz, weil wir später CSS auf das Bild anwenden werden-->
+                <div>
+                    <ul class="main-nav">
+                        <li><a href="#show-works">How it works</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#cities">Out cities</a></li>
+                        <li><a href="#sign-up">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>LEAVE THE COUCH.<br>EMBRACE THE VICTORY.</br></h1>
+            <a class="btn btn-full" href="#count-me">Count me in</a>
+            <a class="btn btn-ghost" href="#show-me">Show me more</a>
+        </div>
+    </header>
+    <!----------------------------------- Start P2 ---------------------------------------->
+
+    <section class="section-features" id="show-me">
+        <div class="row">
+            <h2>Don't just look fit &mdash; get fit.</h2>
+            <p class="long-copy">
+                Hello, we're RavusFortis, your new premium fitness service. We know you're always busy. No time for
+                sports. So let us take care of that, we're really good at it, we promise!
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                <i class="icon ion-ios-infinite icon-big"></i>
+                <h3>Up to 365 days/year</h3>
+                <p>Never worry about workouts again! We really mean that. Our subscription plans include up to 365
+                    days/year coverage. You can also choose to workout more flexibly if that's your style.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="icon ion-ios-stopwatch icon-big"></i>
+                <h3>Ready in 30-40 minutes</h3>
+                <p>You're only thirty to forty minutes away from your strong and super healthy body. We work with the
+                    best coaches in each town to ensure that you're 100% happy.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="icon ion-ios-nutrition icon-big"></i>
+                <h3>Best Nutrition</h3>
+                <p>All our nutrition tips are top notch, organic and can be bought local. The suplements are without
+                    added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="icon ion-ios-cart icon-big"></i>
+                <h3>Order anything</h3>
+                <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose
+                    from our training plans containing over 100 workouts. It's up to you!</p>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- End P2 ---------------------------------------->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> <!--Immer am Schluss vom Body Tag, damit es am schluss gerendert wird-->
 </body>
 </html>
